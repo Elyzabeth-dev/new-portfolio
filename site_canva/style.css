@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --cor-primaria: black;
+  --cor--secundaria: white;
+  --cor--terciaria: #cb8e7e;
+
+  --fonte-primaria: "Fira Sans", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background-color: var(--cor-primaria);
+  color: var(--cor--secundaria);
+  font-family: var(--fonte-primaria);
+  font-weight: 700;
+  font-style: normal;
+  border: 15px solid var(--cor--terciaria);
+  min-height: 100%; /* Garante que a borda envolva toda a altura */
+  box-sizing: border-box; /* Inclui a borda no cálculo da altura */
+
+}
+
+.cabecalho {
+  background-color: var(--cor--terciaria); /* Barra superior rosa */
+  padding: 20px;
+  text-align: center; /* Alinha o título à esquerda na barra superior */
+}
+
+.conteudo__principal {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container__info {
+  display: flex;
+  justify-content: center; /* Espaço entre as seções esquerda e direita */
+  align-items: center; /* Alinha verticalmente ao centro */
+  max-width: 960px; /* Largura máxima do conteúdo */
+  width: 90%; /* Ocupa uma porcentagem da largura em telas maiores */
+  padding: 20px; /* Adicione padding interno ao container principal */
+}
+
+.perfil__lateral {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Alinha a imagem e os ícones à esquerda */
+}
+
+.imagem__perfil {
+  /* width: 180px; /* Aumentei um pouco o tamanho da imagem */
+  /* height: 180px; */
+  overflow: hidden;
+  margin-bottom: 30px; /* Mais espaço abaixo da imagem */
+  display: flex;
+  align-items: center;
+}
+
+.imagem_perfil {
+  width: 50%;
+}
+
+.info__direita {
+  text-align: center;
+  color: var(--cor--terciaria);
+  margin-bottom: 20px;
+}
+
+.texto__info h1 {
+  color: var(--cor--terciaria);
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  display: flex;
+  text-align: center;
+}
+
+.texto__info h2 {
+  color: var(--cor--terciaria);
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.info__subtitulo {
+  font-size: 0.75rem;
+}
+
+.social__icons {
+  display: flex;
+  gap: 20px; /* Espaçamento entre os ícones */
+  align-items: center;
+}
+
+.social__icons a{
+  color: var(--cor--secundaria);
+  margin: 0 10px;
+  font-size: 1.25rem;
+  text-decoration: none;
+}
+
+.logo__imagens {
+  width: 20px;
+}
+
+.logo__imagens__instagram {
+  width: 27px;
+}
+
+.botoes__info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: 10px;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  align-items: center;
+}
+
+.botoes__info button {
+  padding: 10px 30px;
+  border: 1px solid var(--cor--secundaria);
+  background-color: transparent;
+  color: var(--cor--secundaria);
+  cursor: pointer;
+  width: 250px;
+  height: 40px;
+}
+
+.botoes__info button:hover {
+  padding: 10px 20px;
+  border: 1px solid var(--cor-primaria);
+  background-color: var(--cor--secundaria);
+  color: var(--cor-primaria);
+  cursor: pointer;
+}
+
+.seta__conteudo {
+  position: absolute; /* ESSENCIAL: Permite posicionar o elemento livremente */
+  height: auto;      /* Mantém a proporção da imagem */
+  z-index: 1000;     /* Opcional: Garante que a imagem fique acima de outros elementos */
+  width: 4rem;
+}
+
+.seta__conteudo {
+  top: 2rem;   /* Distância do topo */
+  left: 1.25rem; /* Distância da direita */
+}
+
+.certificados {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--cor--terciaria);
+  font-family: var(--fonte-primaria);
+}
+
+@media (max-width: 1200px){
+  .conteudo__principal{
+    flex-direction: column;
+  }
+}
+/* .rodape {
+  padding: 10px;
+  text-align: center;
+} */
+
+/* .cabecalho__titulo {
+  color: black;
+  font-weight: 700;
+  font-size: 24px;
+  margin: 0;
+} */
